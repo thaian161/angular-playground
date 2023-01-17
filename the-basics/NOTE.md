@@ -4,3 +4,4 @@ Choose stylesheet format
 
 Install Bootstrap for this project `npm i --save bootstrap@3`
 In `angular.js`, add ` "node_modules/bootstrap/dist/css/bootstrap.min.css"` under `architect` > `styles`
+
