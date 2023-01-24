@@ -22,7 +22,7 @@ import {Component} from '@angular/core'
 
 @Component({
   selector: 'app-server',
-  templateURL: 
+  templateURL: './server.component.html',
 
 })
 export class ServerComponent{
