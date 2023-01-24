@@ -17,6 +17,7 @@ In @Component, we put in an object with
 We need to register Server component in the App Component. We register new component in the @NgModule declaration and import Server into App
 ``` 
 server.component.ts
+
 import {Component} from '@angular/core'
 
 @Component({
