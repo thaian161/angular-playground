@@ -42,6 +42,8 @@ import { ServerComponent } from './server/server.component';
 })
 ```
 
+- styleUrls can be absent but template or templateURl is a MUST
+
 # Create component with CLI
 
 - Create component with the CLI `ng generate component servers` or short cut `ng g c servers`
@@ -53,4 +55,19 @@ template: `
     <app-server><app-server>
     <app-server></app-server>`,
 
+```
+
+# Component Styles
+```
+styleUrls: ['./app.component.css']
+})
+``` 
+- StyleUrls is an array, can hold many css files
+- We can use it inline as well
+```
+styles: [`
+  h3 {
+    color: blue;
+  }
+`]
 ```
