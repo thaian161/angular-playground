@@ -45,3 +45,12 @@ import { ServerComponent } from './server/server.component';
 # Create component with CLI
 
 - Create component with the CLI `ng generate component servers` or short cut `ng g c servers`
+- use external file ` templateUrl: './servers.component.html',` 
+===  use inline style ` template: '<app-server></app-server><app-server></app-server>',` 
+=== wrap in back tick
+```
+template: `
+    <app-server><app-server>
+    <app-server></app-server>`,
+
+```
