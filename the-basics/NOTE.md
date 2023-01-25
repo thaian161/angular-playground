@@ -41,3 +41,7 @@ import { ServerComponent } from './server/server.component';
   ],
 })
 ```
+
+# Create component with CLI
+
+- Create component with the CLI `ng generate component servers` or short cut `ng g c servers`
