@@ -72,3 +72,16 @@ styles: [`
 `]
 ```
 
+# Data Binding
+- Communication between your logic in the TS file to the template view that user see
+
+1. Output data from TS to HTML
+  - **String Interpolation** `( {{ data }} )`
+    In TS file, declare properties then render it out in HTML file - see Server component
+
+  - **Property Binding** `( [property] = "data")`
+
+2. User interact with HTML cause change in logic TS file
+  - **Event Binding** `(( event ) = " expression ")`
+
+3. Combination of both way: **Two way binding** `([ngModel] = " data ")`
