@@ -78,9 +78,11 @@ styles: [`
 1. Output data from TS to HTML
   - **String Interpolation** `( {{ data }} )`
     In TS file, declare properties then render it out in HTML file - see Server component (serverID, serverStatus, getServerStatus())
+    See Server component
 
   - **Property Binding** `( [property] = "data")`
     see Servers component
+    use [] => property binding
 
 2. User interact with HTML cause change in logic TS file
   - **Event Binding** `(( event ) = " expression ")`
