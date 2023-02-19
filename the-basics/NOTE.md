@@ -88,5 +88,7 @@ styles: [`
 
 2. User interact with HTML cause change in logic TS file
   - **Event Binding** `(( event ) = " expression ")`
+    - `serverCreationStatus` in Servers
+    - `onCreateServer()` in Servers 
 
 3. Combination of both way: **Two way binding** `([ngModel] = " data ")`
