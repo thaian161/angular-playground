@@ -1,5 +1,12 @@
-<p>------servers works!------</p>
-
+<label> Server Name </label>
+<input 
+  type="text"
+  class="form-control" 
+  (input)="onUpdateServerName($event)"
+>
+<p>
+  <span>Server Name is: </span>{{serverName}}
+</p>
 <button 
   class="btn btn-primary"
   style="margin: 10rem; font-size: 5rem;"
@@ -11,6 +18,7 @@
   {{serverCreationStatus}}
 </p>
 
-<p> {{ allowNewServer }}</p>
 
+<!-- Example of Property Binding and String Interpolation -->
+<p> {{ allowNewServer }}</p>
 <p [innerText]="allowNewServer"></p>
