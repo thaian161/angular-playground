@@ -158,3 +158,5 @@ getColor () {
 
 ## CSS Dynamically Class with ngClass
 `[ngClass] = "{online: serverStatus === 'online'}"`
+
+## Output data list with ngFor
