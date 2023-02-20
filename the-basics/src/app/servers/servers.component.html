@@ -15,7 +15,7 @@
 </p>
 <button 
   class="btn btn-primary"
-  style="margin: 10rem; font-size: 5rem;"
+  style="font-size: 2rem;"
   [disabled]="!allowNewServer"
   (click)="onCreateServer()">
   ADD SERVER 
@@ -28,3 +28,11 @@
 <!-- Example of Property Binding and String Interpolation -->
 <p> {{ allowNewServer }}</p>
 <p [innerText]="allowNewServer"></p>
+
+<!-- Use Directives *ngIf -->
+<p *ngIf="serverCreated else noServer">
+   Server was created, server name is {{serverName}}
+</p>
+<ng-template #noServer>
+  <p> No Server was created! </p>
+</ng-template>
