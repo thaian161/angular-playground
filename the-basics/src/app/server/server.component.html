@@ -1,3 +1,11 @@
-<div style="margin: 5rem; font-size: 4rem;">
- <b>{{ 'String Interpolation method:' }}</b> {{ 'Server' }} with ID {{ serverId }} is currently {{ serverStatus }}. Status is {{  getServerStatus() }}
+<div style="margin: 2rem; font-size: 2rem;">
+ <b>{{ 'String Interpolation method:' }}</b> <br> {{ 'Server' }} with ID {{ serverId }} is currently {{ serverStatus }}. 
+
+ <br>
+
+ <p
+    [ngStyle] ="{backgroundColor: getColor()}"
+    >Status is {{  getServerStatus() }}
+</p>
+
 </div>
