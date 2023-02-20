@@ -92,3 +92,29 @@ styles: [`
     - `onCreateServer()` in Servers 
 
 3. Combination of both way: **Two way binding** `([ngModel] = " data ")`
+- Important: **FormsModule** is Required for Two-Way-Binding!
+- We need to import **FormModule** from @angular/forms in app.module.ts
+```
+import { FormsModule } from '@angular/forms'; 
+```
+and to the imports[] array
+ ```
+ imports: [
+    BrowserModule,
+    FormsModule
+  ],
+```
+- Example of how to use ngModel in Servers component
+```
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName"
+>
+<p>
+  <span>Server Name is: </span>{{serverName}}
+</p>
+```
+
+## All Forms of Data Binding
+- Check username Component 
