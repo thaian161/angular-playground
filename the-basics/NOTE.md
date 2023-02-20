@@ -139,3 +139,21 @@ and to the imports[] array
 </ng-template>
 ```
 
+## Styling Element Dynamically with ngStyle
+- Unlike structural directives, attribute directives do not add or remove elements. They only change the element they were placed on
+- `[ngStyle] ="{backgroundColor: getColor()}"`
+- In Server component HTML
+```
+ <p
+    [ngStyle] ="{backgroundColor: getColor()}"
+    >Status is {{  getServerStatus() }}
+</p>
+```
+TS
+```
+getColor () {
+ return this.serverName === 'online' ? 'lightGreen' : 'pink';
+}
+```
+
+## CSS Dynamically Class with ngClass
