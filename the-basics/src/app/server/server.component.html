@@ -4,7 +4,8 @@
  <br>
 
  <p
-    [ngStyle] ="{backgroundColor: getColor()}"
+    [ngStyle] = "{backgroundColor: getColor()}"
+    [ngClass] = "{online: serverStatus === 'online'}"
     >Status is {{  getServerStatus() }}
 </p>
 
