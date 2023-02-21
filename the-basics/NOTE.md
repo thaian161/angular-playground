@@ -160,3 +160,10 @@ getColor () {
 `[ngClass] = "{online: serverStatus === 'online'}"`
 
 ## Output data list with ngFor
+```
+<app-server
+  *ngFor="let server of servers">
+</app-server>
+```
+
+- Use index with ngFor
