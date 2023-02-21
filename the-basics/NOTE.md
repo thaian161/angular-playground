@@ -166,4 +166,15 @@ getColor () {
 </app-server>
 ```
 
-- Use index with ngFor
+- Use index with ngFor: refactor onToggleDetails to use timeStamp for log
+```
+onToggleDetails(){
+    this.showDetail = !this.showDetail; //toggle switch between true false
+    this.log.push(this.log.length +1)
+  }
+```
+to 
+```
+ this.log.push( new Date())
+ ```
+ 

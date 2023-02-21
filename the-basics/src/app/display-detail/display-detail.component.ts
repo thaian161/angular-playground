@@ -16,6 +16,8 @@ export class DisplayDetailComponent implements OnInit {
 
   onToggleDetails(){
     this.showDetail = !this.showDetail; //toggle switch between true false
-    this.log.push(this.log.length +1)
+    //this.log.push(this.log.length +1)
+
+    this.log.push( new Date())
   }
 }
